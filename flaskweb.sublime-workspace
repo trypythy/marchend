@@ -1,0 +1,726 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"login",
+				"login_required"
+			],
+			[
+				"logou",
+				"logout_user"
+			],
+			[
+				"re",
+				"redirect"
+			],
+			[
+				"is",
+				"is_authenticated"
+			],
+			[
+				"lo",
+				"login_user"
+			],
+			[
+				"us",
+				"user"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"Us",
+				"UserMixin"
+			],
+			[
+				"che",
+				"check_password_hash"
+			],
+			[
+				"pa",
+				"password"
+			],
+			[
+				"pass",
+				"password_hash"
+			],
+			[
+				"use",
+				"usernames"
+			],
+			[
+				"userna",
+				"usernames"
+			],
+			[
+				"bo",
+				"body"
+			],
+			[
+				"com",
+				"comments_replied_to"
+			],
+			[
+				"comm",
+				"comments_replied_to"
+			],
+			[
+				"co",
+				"comments_replied_to"
+			],
+			[
+				"repl",
+				"reply"
+			],
+			[
+				"relp",
+				"replied_to_list"
+			],
+			[
+				"r",
+				"r"
+			],
+			[
+				"cl",
+				"client_password"
+			],
+			[
+				"log",
+				"logMyNumber"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"read",
+				"readFile"
+			],
+			[
+				"arg",
+				"args"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"mon",
+				"monthlyUnpaidBalance"
+			],
+			[
+				"ite",
+				"item_name"
+			],
+			[
+				"wat",
+				"water_count"
+			],
+			[
+				"ham",
+				"hamburger_count"
+			],
+			[
+				"e",
+				"else"
+			],
+			[
+				"hamb",
+				"hamburger_count"
+			],
+			[
+				"wa",
+				"water_count"
+			],
+			[
+				"sala",
+				"salad_count"
+			],
+			[
+				"it",
+				"items_list"
+			],
+			[
+				"item",
+				"items_list"
+			],
+			[
+				"len",
+				"length"
+			],
+			[
+				"tur",
+				"turn_right"
+			],
+			[
+				"test",
+				"testString"
+			],
+			[
+				"fla",
+				"flatList"
+			],
+			[
+				"fl",
+				"flatten"
+			],
+			[
+				"flatt",
+				"flatten"
+			],
+			[
+				"flat",
+				"flatList"
+			],
+			[
+				"ran",
+				"range"
+			],
+			[
+				"dot",
+				"dotProduct"
+			],
+			[
+				"tot",
+				"total"
+			],
+			[
+				"lis",
+				"listB"
+			],
+			[
+				"asr",
+				"aStringArr"
+			],
+			[
+				"astr",
+				"aStringArr"
+			],
+			[
+				"app",
+				"append"
+			],
+			[
+				"lett",
+				"letter"
+			],
+			[
+				"han",
+				"HAND_SIZE"
+			],
+			[
+				"comp",
+				"compPlayHand"
+			],
+			[
+				"ra",
+				"raw_input"
+			],
+			[
+				"play",
+				"playHand"
+			],
+			[
+				"pla",
+				"playChoice"
+			],
+			[
+				"H",
+				"HAND_SIZE"
+			],
+			[
+				"wor",
+				"wordList"
+			],
+			[
+				"ha",
+				"hand"
+			],
+			[
+				"wo",
+				"wordScore"
+			],
+			[
+				"curr",
+				"currentWord"
+			],
+			[
+				"hand",
+				"hand"
+			],
+			[
+				"word",
+				"wordList"
+			],
+			[
+				"best",
+				"best_word"
+			],
+			[
+				"max",
+				"max_score"
+			],
+			[
+				"dea",
+				"dealHand"
+			],
+			[
+				"get",
+				"getFrequencyDict"
+			],
+			[
+				"cur",
+				"currentHand"
+			],
+			[
+				"upda",
+				"updateHand"
+			],
+			[
+				"sam",
+				"sampleList"
+			],
+			[
+				"loa",
+				"loadWords"
+			],
+			[
+				"up",
+				"updateHand"
+			],
+			[
+				"ge",
+				"getFrequencyDict"
+			],
+			[
+				"br",
+				"brokenDown"
+			],
+			[
+				"dis",
+				"displayHand"
+			],
+			[
+				"guess",
+				"guessedLetter"
+			],
+			[
+				"gue",
+				"guessedLetterLower"
+			],
+			[
+				"gu",
+				"guessesLeft"
+			],
+			[
+				"gues",
+				"guessesLeft"
+			],
+			[
+				"guesses",
+				"guessesLeft"
+			],
+			[
+				"rema",
+				"remainingWord"
+			],
+			[
+				"rem",
+				"remainingWord"
+			],
+			[
+				"guesse",
+				"guessedLetter"
+			],
+			[
+				"letter",
+				"lettersGuessed"
+			],
+			[
+				"not",
+				"notGuessed"
+			],
+			[
+				"retur",
+				"return"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"lette",
+				"lettersGuessed"
+			],
+			[
+				"sec",
+				"secretWord"
+			],
+			[
+				"exp",
+				"exp-1"
+			],
+			[
+				"radia",
+				"radiation"
+			],
+			[
+				"radiat",
+				"radiationExposure"
+			],
+			[
+				"month",
+				"monthlyPayment"
+			],
+			[
+				"mo",
+				"monthlyPayment"
+			],
+			[
+				"m",
+				"MonthlyInstallment"
+			],
+			[
+				"to",
+				"ToBePaid"
+			],
+			[
+				"mont",
+				"monthlyInterestrate"
+			],
+			[
+				"total",
+				"totalPaid"
+			],
+			[
+				"Mon",
+				"Monthly"
+			],
+			[
+				"min",
+				"minPayment"
+			],
+			[
+				"annual",
+				"annualInterestRate"
+			],
+			[
+				"data",
+				"datasets"
+			],
+			[
+				"b",
+				"text-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"colo",
+				"border-color"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"al",
+				"text-align"
+			],
+			[
+				"bg",
+				"background-image"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"bac",
+				"background-image"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"border-r",
+				"border-radius"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "flaskweb.py",
+			"settings":
+			{
+				"buffer_size": 103,
+				"encoding": "UTF-8",
+				"line_ending": "Unix",
+				"name": "flaskweb.py"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/brijeshtripathi/Documents/dev/py/marchend"
+	],
+	"file_history":
+	[
+		"/Users/brijeshtripathi/Documents/dev/py/sawthat/app/__init__.py",
+		"/Users/brijeshtripathi/Documents/dev/py/sawthat/app/templates/base.html",
+		"/Users/brijeshtripathi/Documents/dev/py/sawthat/app/models.py",
+		"/Users/brijeshtripathi/Documents/dev/py/sawthat/app/routes.py",
+		"/Users/brijeshtripathi/Documents/dev/py/microblogMGGit/app/__init__.py",
+		"/Users/brijeshtripathi/Documents/dev/py/microblogGit/app/main/routes.py",
+		"/Users/brijeshtripathi/Documents/dev/py/microblogGit/app/templates/index.html",
+		"/Users/brijeshtripathi/Documents/dev/py/microblogGit/app/templates/base.html",
+		"/Users/brijeshtripathi/Documents/dev/py/microblogGit/app/auth/routes.py",
+		"/Users/brijeshtripathi/Documents/dev/js/js30/drum kit/index.html",
+		"/Users/brijeshtripathi/Dropbox/personal/dev/js/callback.js",
+		"/Users/brijeshtripathi/Dropbox/personal/dev/pyth/projects/notifier_bot/usernames.txt",
+		"/Users/brijeshtripathi/Dropbox/personal/dev/js/nodeschool/learnyounode/mac/firstAsync.js",
+		"/Users/brijeshtripathi/Dropbox/personal/dev/pyth/projects/notifier_bot/notifier_bot.py",
+		"/Users/brijeshtripathi/Dropbox/personal/dev/pyth/projects/notifier_bot/config.py",
+		"/Users/brijeshtripathi/Dropbox/work/wifive/sql queries/logindetail.txt",
+		"/Users/brijeshtripathi/Desktop/Xcode projects/ShotPut/Podfile",
+		"/Users/brijeshtripathi/Desktop/Keep.It.In.The.Family.XXX.720P.WEBRIP.MP4-GUSH/gush.keep.it.in.the.family.720p.nfo",
+		"/Users/brijeshtripathi/Downloads/login-demo-ios-master/Login Demo/TwitterAuthHelper.h",
+		"/Users/brijeshtripathi/Downloads/login-demo-ios-master/Login Demo/TwitterAuthHelper.m",
+		"/Users/brijeshtripathi/Dropbox/personal/dev/swift/honk ios",
+		"/Users/brijeshtripathi/Documents/dev/py/OpenATC-master/Scripts/makeinfo.py",
+		"/Users/brijeshtripathi/Documents/dev/py/OpenATC-master/Scripts/jimmyjazz.py",
+		"/Users/brijeshtripathi/Documents/edx/take 2/ps2_1.py",
+		"/Users/brijeshtripathi/Dropbox/personal/dev/swift/BNR_Questions.txt",
+		"/usr/local/bin/sublime",
+		"/Users/brijeshtripathi/Documents/cd/pyOop.py",
+		"/Users/brijeshtripathi/Documents/coursera - github/game_new.js",
+		"/Users/brijeshtripathi/Documents/coursera - github/game_old.js",
+		"/Users/brijeshtripathi/git-prompt.sh",
+		"/Users/brijeshtripathi/git-completion.bash",
+		"/Users/brijeshtripathi/Dropbox/personal/pyth/OOP/reeborg.py",
+		"/Users/brijeshtripathi/Desktop/edxPS1.py",
+		"/Users/brijeshtripathi/Documents/edx/ProblemSet4/ps4b.py",
+		"/Users/brijeshtripathi/Documents/edx/ProblemSet4/ps4a.py",
+		"/Users/brijeshtripathi/Documents/edx/ProblemSet4/test_ps4a.py",
+		"/Users/brijeshtripathi/Documents/edx/ps3_hangman.py",
+		"/Users/brijeshtripathi/Documents/sentdex/test.py",
+		"/Users/brijeshtripathi/Documents/FCC/calculator2/index.html",
+		"/Users/brijeshtripathi/Documents/FCC/calculator2/css/style.css",
+		"/Users/brijeshtripathi/Desktop/Flapper News/app.js",
+		"/Users/brijeshtripathi/Desktop/Flapper News/index.html",
+		"/Users/brijeshtripathi/Desktop/edx_week2.py",
+		"/Users/brijeshtripathi/Documents/FCC/calculator/index.html",
+		"/Users/brijeshtripathi/Documents/FCC/calculator/css/style.css",
+		"/Users/brijeshtripathi/Documents/FCC/calculator/style.css",
+		"/Users/brijeshtripathi/Documents/coursera - github/version-control/create-your-own-adventure/README.md",
+		"/Users/brijeshtripathi/Documents/coursera - github/version-control/create-your-own-adventure/english/indian_winter/winters_in_india.md",
+		"/Users/brijeshtripathi/Documents/coursera - github/version-control/create-your-own-adventure/english/alchemy/alchemy.md",
+		"/Users/brijeshtripathi/Documents/coursera - github/version-control/create-your-own-adventure/english/indian_winter/winters_in_india.txt",
+		"/Users/brijeshtripathi/Documents/coursera - github/version-control/reflections/lesson_3_reflections.txt",
+		"/Users/brijeshtripathi/Documents/coursera - github/version-control/recipes/cake-recipe.txt",
+		"/Users/brijeshtripathi/Documents/coursera - github/version-control/asteroids/game.js",
+		"/Users/brijeshtripathi/Desktop/ecommerce-2/src/ecommerce2/wsgi.py"
+	],
+	"find":
+	{
+		"height": 39.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "flaskweb.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								102,
+								102
+							]
+						],
+						"settings":
+						{
+							"auto_name": "flaskweb.py",
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 24.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "flaskweb.sublime-project",
+	"replace":
+	{
+		"height": 44.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

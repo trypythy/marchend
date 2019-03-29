@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+	{% for review in reviews %}
+		<h1>{{ review.title }}</h1>
+		<p>by {{ review.author }} at {{ review.date_posted }}</p>
+		<p>{{ review.content }}</p>
+	{% endfor %}
+{% endblock content %}

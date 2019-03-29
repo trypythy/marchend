@@ -1,0 +1,13 @@
+<html>
+	<head>
+		{% if title %}
+			<title>WatchOut - {{ title }}</title>
+		{% else %}
+			<title> WatchOut </title>
+		{% endif %}
+	</head>
+	<body>
+		hello layout!
+		{% block content %} {% endblock %}
+	</body>
+</html>
