@@ -1,31 +1,16 @@
 import os, secrets
 from PIL import Image
-from flask import render_template, url_for, flash, redirect, request
-from flaskweb.forms import RegistrationForm, LoginForm, UpdateAccountForm
+from flask import render_template, url_for, flash, redirect, request, abort
+from flaskweb.forms import RegistrationForm, LoginForm, UpdateAccountForm, ReviewForm
 from flaskweb.models import User, Review
 from flaskweb import app, db, bcrypt
 from flask_login import login_user, logout_user, current_user, login_required
 
 
-reviews = [
-	{
-		'author': 'bt',
-		'title': 'black mirror',
-		'content': 'Futuristic, Dark, Inevitable',
-		'date_posted': 'March 29, 2019'
-	},
-	{
-		'author': 'jt',
-		'title': 'star trek discovery',
-		'content': 'Fantasy, Space, Worm holes',
-		'date_posted': 'March 29, 2019'
-	}
-
-]
-
 @app.route('/')
 @app.route('/home')
 def home():
+	reviews = Review.query.all()
 	return render_template('home.html', reviews=reviews)
 
 @app.route('/about')
@@ -68,13 +53,13 @@ def logout():
 	flash('Logged out successfully', 'success')
 	return redirect(url_for('home'))
 
-def save_picture(form_picture):
+def save_picture(form_picture, w, h):
 	random_hex = secrets.token_hex(8)
 	_, f_ext = os.path.splitext(form_picture.filename)
 	picture_fn = random_hex + f_ext
 	picture_path = os.path.join(app.root_path, 'static/profile_pics/' + picture_fn)
 	
-	output_size = (125, 125)
+	output_size = (int(w), int(h))
 	i = Image.open(form_picture)
 	i.thumbnail(output_size)
 
@@ -88,7 +73,7 @@ def account():
 	form = UpdateAccountForm()
 	if form.validate_on_submit():
 		if form.picture.data:
-			picture_file = save_picture(form.picture.data)
+			picture_file = save_picture(form.picture.data, 125, 125)
 			current_user.image_file = picture_file
 		current_user.username = form.username.data
 		current_user.email = form.email.data
@@ -101,7 +86,50 @@ def account():
 	image_file = url_for('static', filename = 'profile_pics/' + current_user.image_file)
 	return render_template('account.html', title='My Account', image_file=image_file, form = form)
 
+@app.route('/review/new', methods=['GET', 'POST'])
+@login_required
+def write_review():
+	form = ReviewForm()
+	if form.validate_on_submit():
+		review = Review(title=form.title.data, content=form.content.data, author=current_user)
+		db.session.add(review)
+		db.session.commit()
+		flash('Review posted!', 'success')
+		return redirect(url_for('home'))
+	return render_template('write_review.html', title='Write Review',
+							form=form, legend='Write a Review')
 
+@app.route('/review/<int:review_id>')
+def review(review_id):
+	review = Review.query.get_or_404(review_id)
+	return render_template('review.html', title=review.title, review=review)
 
+@app.route('/review/<int:review_id>/update', methods=['GET', 'POST'])
+@login_required
+def update_review(review_id):
+	review = Review.query.get_or_404(review_id)
+	if review.author != current_user:
+		abort(403)
+	form = ReviewForm()
+	if form.validate_on_submit():
+		review.title = form.title.data
+		review.content = form.content.data
+		db.session.commit()
+		flash('Review has been updated!', 'success')
+		return redirect(url_for('review', review_id=review.id))
+	elif request.method == 'GET':
+		form.title.data = review.title
+		form.content.data = review.content
+	return render_template('write_review.html', title='Update Review',
+							form=form, legend='Update Review')
 
-
+@app.route('/review/<int:review_id>/delete', methods=['GET', 'POST'])
+@login_required
+def delete_review(review_id):
+	review = Review.query.get_or_404(review_id)
+	if review.author != current_user:
+		abort(403)
+	db.session.delete(review)
+	db.session.commit()
+	flash('Review has been deleted!', 'info')
+	return redirect(url_for('home'))

@@ -3,12 +3,13 @@
 {% block content %}
 	{% for review in reviews %}
 		<article class="media content-section">
+			<img class="rounded-circle article-image" src="{{ url_for('static', filename='profile_pics/' + review.author.image_file) }}">
 		  <div class="media-body">
 		    <div class="article-metadata">
-		      <a class="mr-2" href="#">{{ review.author }}</a>
-		      <small class="text-muted">{{ review.date_posted }}</small>
+		      <a class="mr-2" href="#">{{ review.author.username }}</a>
+		      <small class="text-muted">reviewed on {{ review.date_posted.strftime('%d-%b-%y') }}</small>
 		    </div>
-		    <h2><a class="article-title" href="#">{{ review.title }}</a></h2>
+		    <h2><a class="article-title" href="{{ url_for('review', review_id=review.id) }}">{{ review.title }}</a></h2>
 		    <p class="article-content">{{ review.content }}</p>
 		  </div>
 		</article>
