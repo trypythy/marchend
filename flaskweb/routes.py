@@ -10,7 +10,8 @@ from flask_login import login_user, logout_user, current_user, login_required
 @app.route('/')
 @app.route('/home')
 def home():
-	reviews = Review.query.all()
+	page = request.args.get('page', 1, type=int)
+	reviews = Review.query.order_by(Review.date_posted.desc()).paginate(page=page, per_page=5)
 	return render_template('home.html', reviews=reviews)
 
 @app.route('/about')
@@ -133,3 +134,10 @@ def delete_review(review_id):
 	db.session.commit()
 	flash('Review has been deleted!', 'info')
 	return redirect(url_for('home'))
+
+@app.route('/user/<string:username>')
+def user_reviews(username):
+	page = request.args.get('page', 1, type=int)
+	user = User.query.filter_by(username=username).first_or_404()
+	reviews = Review.query.filter_by(author=user).order_by(Review.date_posted.desc()).paginate(page=page, per_page=5)
+	return render_template('user_reviews.html', title=user.username+'\'s Reviews', reviews=reviews, user=user)

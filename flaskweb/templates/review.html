@@ -5,7 +5,7 @@
 		<img class="rounded-circle article-image" src="{{ url_for('static', filename='profile_pics/' + review.author.image_file) }}">
 	  <div class="media-body">
 	    <div class="article-metadata">
-	      <a class="mr-2" href="#">{{ review.author.username }}</a>
+	      <a class="mr-2" href="{{ url_for('user_reviews', username=review.author.username) }}">{{ review.author.username }}</a>
 	      <small class="text-muted">reviewed on {{ review.date_posted.strftime('%d-%b-%y') }}</small>
 	    </div>
 	    <h2 class="article-title">{{ review.title }}</h2>
