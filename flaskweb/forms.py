@@ -34,8 +34,8 @@ class UpdateAccountForm(FlaskForm):
 	"""form for update account view"""
 	username = StringField('Username', validators=[DataRequired(), Length(min=2, max=20)])
 	email = StringField('Email', validators=[DataRequired(), Email()])
-	submit = SubmitField('Update')
 	picture = FileField('Update Profile Picture', validators=[FileAllowed(['jpg', 'png'])])
+	submit = SubmitField('Update')
 
 	def validate_username(self, username):
 		user = User.query.filter_by(username=username.data).first()
@@ -53,5 +53,25 @@ class ReviewForm(FlaskForm):
 	title = StringField('Title', validators=[DataRequired()])
 	content = TextAreaField('Review', validators=[DataRequired()])
 	submit = SubmitField('Save')
+
+class RequestResetForm(FlaskForm):
+	"""docstring for RequestResetForm"""
+	email = StringField('Email', validators=[DataRequired(), Email()])
+	submit = SubmitField('Request Reset Password')
+
+	def validate_email(self, email):
+		user = User.query.filter_by(email=email.data).first()
+
+		def validate_email(self, email):
+			user = User.query.filter_by(email=email.data).first()
+			if user is None:
+				raise ValidationError("This email is not registered. Please try again.")
+
+class ResetPasswordForm(FlaskForm):
+	"""docstring for ResetPasswordForm"""
+	password = PasswordField('Choose New password', validators=[DataRequired()])
+	confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
+	submit = SubmitField('Reset Password')
+		
 
 
